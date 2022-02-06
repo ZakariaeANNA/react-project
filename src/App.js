@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SidebarLeft from "./Components/SidebarLeft";
 import SidebarRight from './Components/SidebarRight';
@@ -16,5 +15,5 @@ function App() {
     </div>
   );
 }
-
+  
 export default App;
