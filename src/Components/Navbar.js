@@ -31,7 +31,7 @@ const Navbar = () =>{
                    
                   <div className="dropdown2">
                   <ul>
-                   <li>
+                   <li className="dropdown2">
                           
                               <a href="#">KurniaMajid</a>
                               <a href="#"><BiUserCircle size={25}/></a>
