@@ -7,7 +7,7 @@ import { IoSend } from 'react-icons/io5'
 
 const Chat = () =>{
   return(
-    <div className='container'>
+    <div className='container sm:-z-1'>
       <div className='message-body'>
         <div className='date'><span>Toady</span></div>
         <div className='message entrant'>

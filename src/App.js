@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div className="App">
-      <SidebarLeft />
+      <SidebarLeft /> 
       <Navbar />
       <Chat />
       <SidebarRight />

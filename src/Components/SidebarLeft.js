@@ -10,8 +10,10 @@ const SidebarLeft = () =>{
         Array.from(elms).forEach((x) => {
             if (x.style.display === "none") {
               x.style.display = "block";
+              document.getElementById("side").style.backgroundColor = "white";
             } else {
               x.style.display = "none";
+              document.getElementById("side").style.backgroundColor = "";
             }
         })
     }
@@ -21,8 +23,8 @@ const SidebarLeft = () =>{
         
     }
     return (
-        <div class="SidebarLeft m-2 space-y-1 text-sm font-bold float-left overflow-y-auto h-max">
-            <div class="flex font-bold text-xl flex-row items-center justify-between">
+        <div id="side" className="SidebarLeft px-2 sm:z-10 space-y-1 text-sm font-bold float-left sm:fixed h-screen">
+            <div className="flex font-bold text-xl flex-row items-center justify-between">
                 <div className="hide sm:hidden">
                     Kump<span className="text-sky-500">ulo</span>
                 </div>
@@ -117,14 +119,15 @@ const SidebarLeft = () =>{
                         <span>0/5</span>
                     </div>
                 </div>
-            </div>
-            <div className="hide flex flex-row items-center justify-between sm:hidden">
-                <div className="flex items-center space-x-3">
-                    <BiUserCircle size={35} />
-                    <span>Picko Squad</span>
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                        <BiUserCircle size={35} />
+                        <span>Picko Squad</span>
+                    </div>
+                    <MdKeyboardArrowDown size={30} />
                 </div>
-                <MdKeyboardArrowDown size={30} />
             </div>
+            
             <hr className="hide px-2 bg-black sm:hidden" />
             <div className="hide space-y-2 sm:hidden">
                 <div> SYSTEM </div>
