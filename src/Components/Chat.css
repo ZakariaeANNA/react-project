@@ -74,7 +74,6 @@
   .sortant .text{
     background-color: white;
     border-radius: 10px;
-    height: 50px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -82,7 +81,6 @@
     background-color: #2f7fee;
     color: white;
     border-radius: 10px;  
-    height: 50px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -107,9 +105,13 @@
     flex-wrap: wrap;
     font-weight: bold;
     font-size: 0.8em;
-    height: 100%;
     padding: 10px;
+    height: fit-content;
   }
 .entrant .time{
   float: right;
+  margin-right: 50px;
+}
+.sortant .time{
+  margin-left: 50px;
 }
