@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SidebarLeft from "./Components/SidebarLeft";
 import SidebarRight from './Components/SidebarRight';
@@ -9,12 +8,12 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div className="App">
-      <SidebarLeft />
+      <SidebarLeft /> 
       <Navbar />
       <Chat />
       <SidebarRight />
     </div>
   );
 }
-
+  
 export default App;
