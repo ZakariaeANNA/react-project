@@ -9,7 +9,7 @@ const Navbar = () =>{
     return (
         <div className="Navbar font-bold">
             <div>
-                <div className="dropdown1 space-x-2 sm:ml-10">
+                <div className="dropdown1 space-x-2 sm:ml-10 ">
                     <BsChatDots size={20} className="iconchat"/>
                     <span className="chat">General Chat</span>
                     <div className="dropdown">
@@ -23,7 +23,7 @@ const Navbar = () =>{
             </div>
 
             <div>
-                <div className="dropdown1 space-x-2">
+                <div className="dropdown1 space-x-2 sm:mr-10">
                     <a href="javascript(void(0));"><IoMdNotificationsOutline size={25}/></a>
                     <span className="profile">KurniaMajid</span>
                     <a href="javascript(void(0));"><BiUserCircle size={25}/></a>
@@ -33,42 +33,9 @@ const Navbar = () =>{
                             <a href="javascript(void(0));">Profil</a>
                             <a href="javascript(void(0));">Logout</a>
                         </div>
-                    </div>
-<<<<<<< HEAD
-               </div>
-              
-               <div className="col">
-                   <div className="icon-notification">
-                     <a href="#"><IoMdNotificationsOutline size={25}/></a>
-                   </div> 
-                   
-
-                   
-                  <div className="dropdown2">
-                  <ul>
-                   <li className="dropdown2">
-                          
-                              <a href="#">KurniaMajid</a>
-                              <a href="#"><BiUserCircle size={25}/></a>
-                              <a href=""><AiOutlineDown size={15} className="down"/></a>
-                              <ul className="drop">
-                                <li><a href="#">Profil</a></li>
-                                <li><a href="#">Logout</a></li>
-                              </ul>
-                          
-                      
-                              </li>
-                 </ul>  
-                 </div>
-                 
-                 </div>
-                 
-               
-        </div>
-=======
+                    </div>      
                 </div>
             </div>
->>>>>>> 24690e3634bb8975f34b656ece481d17561493bb
         </div>
     );
 }

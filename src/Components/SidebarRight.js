@@ -2,159 +2,130 @@ import React from "react";
 import './SidebarRight.css';
 import {FiSearch} from 'react-icons/fi';
 import {BiUserCircle,BiMicrophoneOff} from 'react-icons/bi';
+import { VscThreeBars } from 'react-icons/vsc'
 
 
 const SidebarRight = () =>{
+   const HideorShow = (elms) =>{
+      Array.from(elms).forEach((x) => {
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            document.getElementById("sideright").style.backgroundColor = "white";
+          } else {
+            x.style.display = "none";
+            document.getElementById("sideright").style.backgroundColor = "";
+          }
+      })
+  }
+  const handleHidden = () =>{
+      var logo = document.getElementsByClassName("hideright");
+      HideorShow(logo);  
+  }
     return (
-        <div className="SidebarRight">
-            <div className="search">
-                <input type="text" placeholder="Search" id="serch"/>
-                <FiSearch size={20} className="icon"/>
-            </div>
-            <div className="boxadmin">
-               <div className="admin">
-                   ADMIN
+        <div className="SidebarRight float-right text-sm px-2 space-y-2 sm:z-10 sm:fixed" id="sideright">
+            <div onClick={handleHidden}>
+               <VscThreeBars size={30}/>
+            </div> 
+            <div className="hideright sm:hidden space-y-2">
+               <div className="search">
+                  <input type="text" placeholder="Search" id="serch"/>
+                  <FiSearch size={20} className="icon"/>
                </div>
-               <div className="status-s">
-                   s
+               <div className="flex flex-row justify-between">
+                  <div>ADMIN</div>
+                  <div>s</div>
                </div>
-            </div>
-            <div className="boxadmin1">
-               <BiUserCircle size={50} className="iconuser1"/>
-               <div className="article1">
-                    <p><strong>Me</strong></p>
-                    <div className="desc1">
-                    <p>Now on Podchess</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Me</strong></p>
+                        <p className="text-gray-700">Now on Podchess</p>
+                     </div>
+                  </div>
+                  <BiMicrophoneOff size={20} />
                </div>
-               <BiMicrophoneOff size={20} className="iconmicro1"/>
-            </div>
-            <div className="boxadmin1">
-               <BiUserCircle size={50} className="iconuser1"/>
-               <div className="article1">
-                    <p><strong>Parjoku Fkboi</strong></p>
-                    <div className="desc1">
-                    <p>Now on Podchess</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Parjoku Fkboi</strong></p>
+                        <p className="text-gray-700">Now on Podchess</p>
+                     </div>
+                  </div>
+                  <BiMicrophoneOff size={20} />
                </div>
-               <BiMicrophoneOff size={20} className="iconmicro1"/>
-            </div>
-            <div className="boxadmin1">
-               <BiUserCircle size={50} className="iconuser1"/>
-               <div className="article1">
-                    <p><strong>Irul Cuaem</strong></p>
-                    <div className="desc1">
-                    <p>Now on Podchess</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Irul Cuaem</strong></p>
+                        <p className="text-gray-700">Now on Podchess</p>
+                     </div>
+                  </div>
+                  <BiMicrophoneOff size={20} />
                </div>
-               <BiMicrophoneOff size={20} className="iconmicro1"/>
-            </div>
-            <div className="boxadmin2">
-               <BiUserCircle size={50} className="iconuser2"/>
-               <div className="article2">
-                    <p><strong>Den Yili</strong></p>
-                    <div className="desc2">
-                    <p>Watching Netflix</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Mulick Abimana</strong></p>
+                        <p className="text-gray-700">Now on Podchess</p>
+                     </div>
+                  </div>
                </div>
-            </div>
-            <div className="boxadmin3">
-               <BiUserCircle size={50} className="iconuser3"/>
-               <div className="article3">
-                    <p><strong>Mulick Abimana</strong></p>
-                    <div className="desc3">
-                    <p>Now on Figma</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div>BUDAK STUDIO</div>
+                  <div>s</div>
                </div>
-            </div>
-            <div className="boxbodakstudio">
-               <div className="budakstudio">
-                   BUDAK STUDIO
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Raminten</strong></p>
+                        <p className="text-gray-700">Playing Among us</p>
+                     </div>
                </div>
-               <div className="status-s1">
-                   s
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Loli Bandrek</strong></p>
+                        <p className="text-gray-700">Now on Figma</p>
+                     </div>
                </div>
-            </div>
-            <div className="boxbodakstudio1">
-               <BiUserCircle size={50} className="iconuser2"/>
-               <div className="article2">
-                    <p><strong>Rudee Taher</strong></p>
-                    <div className="desc2">
-                    <p>Playing Spotitid</p>
-                    </div>
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Den Gleb</strong></p>
+                        <p className="text-gray-700">Watching Netflix</p>
+                     </div>
                </div>
-            </div>
-            <div className="boxbodakstudio2">
-               <BiUserCircle size={50} className="iconuser4"/>
-               <div className="article4">
-                    <p><strong>Narina Dewi</strong></p>
-                    <div className="desc4">
-                    <p>Playing Point Blank</p>
-                    </div>
+               <div className="flex flex-row justify-between">
+                  <div>MEMBER</div>
+                  <div>25</div>
                </div>
-            </div>
-            <div className="boxbodakstudio3">
-               <BiUserCircle size={50} className="iconuser5"/>
-               <div className="article5">
-                    <p><strong>Raminten</strong></p>
-                    <div className="desc5">
-                    <p>Playing Among Us</p>
-                    </div>
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Gunawan Dwi Cahyo</strong></p>
+                        <p className="text-gray-700">Playing PUBG</p>
+                     </div>
                </div>
-            </div>
-            <div className="boxbodakstudio4">
-               <BiUserCircle size={50} className="iconuser5"/>
-               <div className="article5">
-                    <p><strong>Loli Bandrek</strong></p>
-                    <div className="desc5">
-                    <p>Now on Figma</p>
-                    </div>
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Roni Abanda</strong></p>
+                        <p className="text-gray-700">Playing Ghensin</p>
+                     </div>
+               </div>
+               <div className="flex flex-row items-center space-x-1">
+                     <BiUserCircle size={50} />
+                     <div>
+                        <p><strong>Nunung Abraham</strong></p>
+                        <p className="text-gray-700">Playing Among Us</p>
+                     </div>
                </div>
             </div>
-            <div className="boxbodakstudio5">
-               <BiUserCircle size={50} className="iconuser5"/>
-               <div className="article5">
-                    <p><strong>Den Gleb</strong></p>
-                    <div className="desc5">
-                    <p>Watching Netflix</p>
-                    </div>
-               </div>
-            </div>
-            <div className="boxmember">
-               <div className="member">
-                   MEMBER
-               </div>
-               <div className="status-s2">
-                   25
-               </div>
-            </div>
-            <div className="boxmember1">
-               <BiUserCircle size={50} className="iconuser6"/>
-               <div className="article6">
-                    <p><strong>Gunawan Dwi Cahyo</strong></p>
-                    <div className="desc6">
-                    <p>Playing PUBG</p>
-                    </div>
-               </div>
-            </div>
-            <div className="boxmember2">
-               <BiUserCircle size={50} className="iconuser6"/>
-               <div className="article6">
-                    <p><strong>Roni Abanda</strong></p>
-                    <div className="desc6">
-                    <p>Playing Ghensin</p>
-                    </div>
-               </div>
-            </div>
-            <div className="boxmember3">
-               <BiUserCircle size={50} className="iconuser6"/>
-               <div className="article6">
-                    <p><strong>Nunung Abraham</strong></p>
-                    <div className="desc6">
-                    <p>Playing Among Us</p>
-                    </div>
-               </div>
-            </div>
+            
         </div>
     );
 }

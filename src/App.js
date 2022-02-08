@@ -7,10 +7,13 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex">
       <SidebarLeft /> 
-      <Navbar />
-      <Chat />
+      <div className="w-screen sm:fixed float-left">
+        <Navbar />
+        <Chat />
+      </div>
+      
       <SidebarRight />
     </div>
   );

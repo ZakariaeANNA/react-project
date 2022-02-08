@@ -2,19 +2,12 @@
     display: block;
     font-size: 16px;
     padding: 10px 10px;
-    width: 89%;
     background: #fff;
     padding-left: 3px;
     outline: none !important;
 }
 
-.SidebarRight{
-    padding-left: 74%;
-}
 
-.search i {
-    position: absolute;
-}
 
 .icon{
    margin-top: 4%;
@@ -34,230 +27,33 @@
 .boxadmin{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-right: 3%;
+    justify-content: space-between;
 }
 
 .admin{
     color:gray;
-    padding-right: 75%;
 }
 
 .status-s{
     color:gray;
-    padding-right: 2%;
 }
 
-.boxbodakstudio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-right: 3px;
-}
 
-.budakstudio{
-    color:gray;
-    padding-right: 45%;
-}
-
-.status-s1{
-    color:gray;
-    padding-right: 2%;
-}
-
-.boxadmin1{
-    padding-top: 10px;
-}
 
 .boxadmin1{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-right: 13px;
 }
 
 .desc1{
     color:gray;  
 }
 
-.iconuser1{
-    padding-right: 10px;
-}
 
 .article1{
-    padding-right: 30px;
+    padding-right:20px ;
 }
 
-.iconmicro1{
-    margin-top: 12px;
-    margin-left: 12px;
-}
-
-
-
-
-.boxadmin2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 57px;
-    padding-top: 10px;
-}
-
-.desc2{
-    color:gray;  
-}
-
-.iconuser2{
-    padding-right: 10px;
-}
-
-.article2{
-    padding-right: 30px;
-}
-
-
-.boxadmin3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 62px;
-    padding-top: 10px;
-}
-
-.desc3{
-    color:gray;  
-}
-
-.iconuser3{
-    padding-right: 10px;
-}
-
-.article3{
-    padding-right: 30px;
-}
-
-.boxbodakstudio1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 62px;
-    padding-top: 10px;
-}
-
-
-.boxbodakstudio2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 37px;
-    padding-top: 10px;
-}
-
-.desc4{
-    color:gray;  
-}
-
-.iconuser4{
-    padding-right: 10px;
-}
-
-.article4{
-    padding-right: 30px;
-}
-
-
-.boxbodakstudio3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 45px;
-    padding-top: 10px;
-}
-
-.desc5{
-    color:gray;  
-}
-
-.iconuser5{
-    padding-right: 10px;
-}
-
-.article5{
-    padding-right: 30px;
-}
-
-.boxbodakstudio4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 71px;
-    padding-top: 10px;
-}
-
-.boxbodakstudio5{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 57px;
-    padding-top: 10px;
-}
-
-
-.boxmember{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-right: 3%;
-}
-
-.member{
-    color:gray;
-    padding-right: 75%;
-}
-
-.status-s2{
-    color:gray;
-    padding-right: 2%;
-}
-
-
-.boxmember1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 25px;
-    padding-top: 10px;
-}
-
-.desc6{
-    color:gray;  
-}
-
-.iconuser6{
-    padding-right: 10px;
-}
-
-.article6{
-    padding-right: 30px;
-}
-
-
-.boxmember2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 62px;
-    padding-top: 10px;
-}
-
-.boxmember3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 45px;
-    padding-top: 10px;
+.box{
+    justify-content: space-between;
 }

@@ -19,8 +19,7 @@ const SidebarLeft = () =>{
     }
     const handleHidden = () =>{
         var logo = document.getElementsByClassName("hide");
-        HideorShow(logo);
-        
+        HideorShow(logo);  
     }
     return (
         <div id="side" className="SidebarLeft px-2 sm:z-10 space-y-1 text-sm font-bold float-left sm:fixed h-screen">
